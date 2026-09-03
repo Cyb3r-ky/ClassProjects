@@ -56,7 +56,37 @@ a:hover {
 
 .img1 {
     width: 400px;
-    height: 300px;
+    height: 500px;
+    transform: scalex(-1);
+    transform: translate(150px,-100px);
+}
+
+.img2 {
+    width: 400px;
+    height: 400px;
+    transform: scalex(-1);
+    transform: translate(150px,-0px);
+}
+
+.img3 {
+    width: 400px;
+    height: 400px;
+    transform: scalex(-1);
+    transform: translate(150px,-0px);
+}
+
+.img4 {
+    width: 250px;
+    height: 250px;
+    transform: scalex(-1);
+    transform: translate(350px,90px);
+}
+
+.img5 {
+    width: 450px;
+    height: 400px;
+    transform: scalex(-1);
+    transform: translate(-50px,-90px);
 }
 
 h1 {
@@ -65,8 +95,22 @@ h1 {
     color: #000;
 }
 
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#000
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: #000;
+}
+
+li{
+    font-family: Arial, Helvetica, sans-serif;
 }

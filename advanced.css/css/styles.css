@@ -1,0 +1,142 @@
+body{
+    background-color: rgb(164, 185, 218)
+    ;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+a {
+    color: black;
+}
+
+a:hover{
+    color: forestgreen;
+    text-decoration: none;
+}
+
+#container {
+    background-color: rgb(196, 153, 196);
+    width:65%;
+    margin:20px auto;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+
+header{
+    text-align: center;
+    padding: 40px;
+    border-bottom:2px solid #000;
+}
+
+header h1{
+    font-size: 50px;
+    color: aliceblue;
+}
+
+header h2{
+    color: aliceblue;
+}
+
+
+nav{
+    text-align: center;
+    border-bottom:2px solid #000;
+    padding:15px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a {
+    display:block;
+    background-color:aliceblue ;
+    color:black;
+    width:200px;
+    height:40px;
+    line-height: 40px;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    border:2px solid #000;
+}
+
+nav li a:hover{
+    color:aliceblue;
+    background-color:rgb(196, 153, 196);
+}
+
+main {
+    background-color:rgb(196, 153, 196);
+    padding:20px;
+}
+
+main h1{
+    text-align: center;
+    color: #000;
+}
+
+main h2,main h3{
+    color: #000;
+}
+
+
+.multi_col{
+   display: flex;
+}
+
+section,aside {
+   border-radius: 10px;
+    border:2px solid #000;
+    margin: 20px;
+    padding:20px;
+}
+
+section{
+    width:65%
+}
+
+aside{
+    width: 35%;
+}
+
+.content-box{
+ background-color: aliceblue;
+}
+
+.pagetext {
+    line-height: 1.6;
+}
+
+.responsiveimg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 2px 2px 5px #000;
+}
+
+
+footer {
+    padding:40px 0;
+    text-align: center;
+}
+
+.imgstyle {
+    width:75%;
+    box-shadow: 2px 2px 5px #000;
+}
+
+hr{
+    border:2px
+}

@@ -1,0 +1,330 @@
+body{
+    background-color: rgb(164, 185, 218);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: black;
+}
+
+a:hover{
+    color: forestgreen;
+    text-decoration: none;
+}
+
+#container {
+    background-color: rgb(196, 153, 196);
+    width: 65%;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+
+header{
+    text-align: center;
+    padding: 40px;
+    border-bottom: 2px solid #000;
+}
+
+header h1{
+    font-size: 50px;
+    color: aliceblue;
+}
+
+header h2{
+    color: aliceblue;
+}
+
+
+nav{
+    text-align: center;
+    border-bottom: 2px solid #000;
+    padding: 15px 0;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    background-color: aliceblue;
+    color: black;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+nav li a:hover{
+    color: aliceblue;
+    background-color: rgb(196, 153, 196);
+}
+
+main {
+    background-color: rgb(196, 153, 196);
+    padding: 20px;
+}
+
+main h1{
+    text-align: center;
+    color: #000;
+}
+
+main h2,
+main h3{
+    color: #000;
+}
+
+
+.multi_col{
+    display: flex;
+    gap: 0;
+}
+
+section,
+aside {
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin: 20px;
+    padding: 20px;
+}
+
+section{
+    width: 65%;
+}
+
+aside{
+    width: 35%;
+}
+
+.content-box{
+    background-color: aliceblue;
+}
+
+.pagetext {
+    line-height: 1.6;
+}
+
+.responsiveimg {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    box-shadow: 2px 2px 5px #000;
+}
+
+.responsivepotato {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+footer {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.imgstyle {
+    width: 75%;
+    height: auto;
+    box-shadow: 2px 2px 5px #000;
+}
+
+hr{
+    border: 2px;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    display: block;
+}
+
+
+/* tablet view */
+
+@media (min-width: 600px) and (max-width: 1199px) {
+
+    #container{
+        width: 85%;
+        margin: 20px auto;
+    }
+
+    header{
+        padding: 35px 20px;
+    }
+
+    header h1{
+        font-size: 50px;
+    }
+
+    nav li a{
+        width: 170px;
+        font-size: 22px;
+    }
+
+    .multi_col{
+        display: flex;
+        flex-direction: row;
+    }
+
+    section{
+        width: 60%;
+    }
+
+    aside{
+        width: 40%;
+    }
+
+}
+
+
+/* hotline bling view */
+
+@media (max-width: 599px) {
+
+    body{
+        margin: 0;
+    }
+
+    #container{
+        width: 95%;
+        margin: 10px auto;
+        border-radius: 15px;
+    }
+
+    header{
+        padding: 25px 10px;
+    }
+
+    header h1{
+        font-size: 40px;
+        margin: 10px 0;
+    }
+
+    header h2{
+        font-size: 18px;
+    }
+
+    @media (max-width: 599px) {
+    .map-container iframe {
+        height: 300px;
+    }
+}
+
+
+    /* nav is now vertical */
+
+    nav{
+        padding: 10px;
+    }
+
+    nav li{
+        display: block;
+        margin: 8px 0;
+    }
+
+    nav li a{
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+
+    /* Main content is now one column */
+
+    main{
+        padding: 10px;
+    }
+
+    .multi_col{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section,
+    aside{
+        width: auto;
+        margin: 10px;
+        padding: 15px;
+    }
+
+
+    /* Responsive images? */
+
+    .responsiveimg{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .imgstyle{
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* Smaller text for phones */
+
+    .pagetext{
+        line-height: 1.5;
+    }
+
+    footer{
+        padding: 25px 0;
+    }
+
+}
+
+
+/* Computa view */
+
+@media (min-width: 1200px) {
+
+    #container{
+        width: 50%;
+        margin: 20px auto;
+        border-radius: 20px;
+        border: 2px solid #4b5a60;
+    }
+
+    section{
+        width: 65%;
+    }
+
+    aside{
+        width: 35%;
+    }
+
+    #lower{
+        display: flex;
+    }
+
+    .col{
+        width: 50%;
+    }
+}

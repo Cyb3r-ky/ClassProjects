@@ -1,0 +1,475 @@
+/*-------------- Graphics page stuff */
+
+
+body {
+    margin: 0;
+    background-color: #fbfcff;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(209, 187, 187, 0.425), transparent 25%),
+        radial-gradient(circle at 80% 70%, rgba(225, 198, 89, 0.208), transparent 30%),
+        #1645b5;
+}
+
+
+
+/* nav decor*/
+
+nav {
+    text-align: center;
+    padding: 15px 0 25px;
+    border-bottom: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav li a {
+    display: block;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.626);
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #020d377e;
+    font-family: 'Helvetica Neue Custom', sans-serif;
+    text-align: center;
+
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+nav li a:hover {
+    color: rgb(255, 253, 240);
+    background-color: rgba(238, 240, 243, 0.87);
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.34);
+    transform: scale(1.1);
+    border-color: rgba(238, 240, 243, 0.87);
+}
+
+
+/* main text */
+
+.closer-look {
+    display: block;
+    width: min(600px, 45vw);
+    max-width: 80%;
+    height: auto;
+    margin: 40px 0 0 40px;
+}
+
+
+.intro p {
+    width: min(480px, 38vw);
+    color: white;
+    font-size: clamp(16px, 2vw, 28px);
+    line-height: 1.2;
+    padding: 2px;
+    transform: translate(50px, -50px);
+}
+
+
+/* general style */
+
+.project {
+    position: absolute;
+    overflow: hidden;
+    transition: transform .3s ease;
+}
+
+.project img,
+.project video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* top vid */
+
+.video-one {
+    top: 11%;
+    left: 48.5%;
+    width: 27%;
+    aspect-ratio: 16 / 10;
+    border: 7px solid #000;
+    border-radius: 4px;
+    background-color: #000;
+}
+
+
+/* left vid*/
+
+.video-two {
+    left: 1.6%;
+    top: 55%;
+    width: 30%;
+    aspect-ratio: 16 / 10;
+    border: 7px solid #000;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+
+/* phone  */
+
+.analytics {
+    position: absolute;
+    left: 30%;
+    top: 720px;
+    width: clamp(130px, 18vw, 200px);
+    aspect-ratio: 9 / 16;
+    overflow: hidden;
+    z-index: 50;
+}
+
+.analytics video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: scaleX(1.3);
+}
+
+
+/* web design graphic */
+
+.web-design {
+    left: 55.2%;
+    top: 46%;
+    width: 21%;
+    height: 22%;
+}
+
+.web-design img {
+    object-fit: cover;
+}
+
+
+/* BEYONCE */
+
+.beyonce {
+    left: 77%;
+    top: 9%;
+    width: 17%;
+    height: 41%;
+    border: 7px solid #000;
+    background-color: white;
+}
+
+.beyonce img {
+    object-fit: cover;
+}
+
+
+/* flwoer graphic */
+
+.flower {
+    left: 77%;
+    top: 53%;
+    width: 17%;
+    height: 38%;
+    border: 7px solid #000;
+    background-color: white;
+}
+
+.flower img {
+    object-fit: cover;
+}
+
+
+.bottom-art {
+    position: absolute;
+    left: 61.7%;
+    top: 730px;
+    width: 300px;
+    height: 300px;
+    z-index: 999;
+}
+
+.bottom-art img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* decooor */
+
+.strawberry {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    font-size: clamp(45px, 4vw, 100px);
+    z-index: 219;
+}
+
+
+
+/* hoveer effect */
+
+.project {
+    transition: transform .3s ease;
+}
+
+.project:hover {
+    transform: scale(1.04);
+    z-index: 30;
+}
+
+.analytics:hover {
+    transition: transform .3s ease;
+    transform: scale(1.04);
+}
+
+.strawberry:hover {
+    transition: transform .3s ease;
+    transform: scale(1.24);
+}
+
+.bottom-art:hover {
+    transition: transform .3s ease;
+    transform: scale(1.04);
+}
+
+
+
+
+/* ----------tablet view */
+
+@media screen and (max-width: 800px) {
+
+    #container {
+        min-height: 1100px;
+    }
+
+    .closer-look {
+        width: 55%;
+        max-width: 600px;
+        margin: 0;
+    }
+
+    .intro {
+        position: relative;
+        left: 5%;
+        top: 10px;
+        width: 90%;
+        z-index: 2;
+    }
+
+    .intro p {
+        transform: translate(-5px, -50px);
+        width: 45%;
+        font-size: clamp(12px, 3vw, 22px);
+    }
+
+
+    .video-one {
+        left: 50%;
+        top: 200px;
+        width: 45%;
+        aspect-ratio: 16 / 10;
+        height: auto;
+    }
+
+    .video-two {
+        left: 5%;
+        top: 465px;
+        width: 45%;
+        aspect-ratio: 16 / 10;
+        height: auto;
+    }
+
+
+    .analytics {
+        left: 70%;
+        top: 650px;
+        width: clamp(120px, 20vw, 160px);
+        height: auto;
+        aspect-ratio: 9 / 16;
+    }
+
+    .analytics video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform: scaleX(1.3);
+    }
+
+
+    .web-design {
+        left: 54.5%;
+        top: 450px;
+        width: 42%;
+        height: 17%;
+    }
+
+
+    .beyonce {
+        left: 5%;
+        top: 720px;
+        width: 27%;
+        aspect-ratio: 0.65;
+        height: auto;
+    }
+
+
+    .flower {
+        left: 70%;
+        top: 728px;
+        width: 25%;
+        aspect-ratio: 0.65;
+        height: auto;
+    }
+
+
+    .bottom-art {
+        left: 38%;
+        top: 740px;
+        width: 30%;
+        aspect-ratio: 4 / 3;
+        height: auto;
+        z-index: 2;
+    }
+}
+
+
+/* phone view */
+
+@media screen and (max-width: 550px) {
+
+    #container {
+        min-height: 2300px;
+    }
+
+    /* nav is now vertical */
+
+    nav {
+        padding: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    nav li a {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .closer-look {
+        width: 55%;
+        max-width: 600px;
+        margin: 0 0 0 125px;
+    }
+
+    .intro {
+        top: 30px;
+    }
+
+    .intro p {
+        font-size: 14px;
+        width: 90%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+
+    .video-one {
+        position: absolute;
+        left: 10%;
+        top: 450px;
+        width: 80%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+
+    .video-two {
+        left: 10%;
+        top: 680px;
+        width: 80%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+    }
+
+
+    .analytics {
+        left: 30%;
+        top: 890px;
+        width: 40%;
+        height: auto;
+        aspect-ratio: 9 / 16;
+    }
+
+    .analytics video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform: scaleX(1.3);
+    }
+
+
+    .web-design {
+        left: 5%;
+        top: 1200px;
+        width: 90%;
+        height: 210px;
+    }
+
+
+
+    .bottom-art {
+        left: 6%;
+        top: 1730px;
+        width: 90%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+
+    .beyonce {
+        left: 5%;
+        top: 1430px;
+        width: 42%;
+        height: 260px;
+    }
+
+
+    .flower {
+        left: 53%;
+        top: 1430px;
+        width: 42%;
+        height: 260px;
+    }
+
+
+    .strawberry {
+        left: 65%;
+        top: 890px;
+        font-size: 35px;
+    }
+}

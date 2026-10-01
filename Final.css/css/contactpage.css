@@ -1,0 +1,613 @@
+/*-------last page... CONTACT PAGEEE*/
+
+.contact-page-body {
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            white 0%,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #a9c7ed,
+            #d9e6f8
+        );
+
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* Main contact page */
+
+nav {
+    text-align: center;
+    padding: 15px 0 25px;
+    border-bottom: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav li a {
+    display: block;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.626);
+    width: 200px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 25px;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid #020d377e;
+    font-family: 'Helvetica Neue Custom', sans-serif;
+    text-align: center;
+
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+nav li a:hover {
+    color: rgb(255, 253, 240);
+    background-color: rgba(238, 240, 243, 0.87);
+    box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.34);
+    transform: scale(1.1);
+    border-color: rgba(238, 240, 243, 0.87);
+}
+
+.contact-page {
+    width: 100%;
+    min-height: 850px;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 10px;
+    background: transparent;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+/* to the leftx2 */
+
+.contact-page .contact-left {
+    width: 55%;
+    margin: 0;
+    padding: 150px 35px;
+    border: none;
+    border-radius: 0;
+    position: relative;
+    z-index: 5;
+    box-sizing: border-box;
+}
+
+.contact-page .contact-left h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(70px, 8vw, 125px);
+    font-weight: 400;
+    line-height: .90;
+    letter-spacing: -7px;
+    color: #050505;
+    text-align: left;
+    margin: 0;
+    animation: slidein 2.5s ease-in-out;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+
+/* description */
+
+.contact-page .description {
+    width: 520px;
+    max-width: 100%;
+    margin-left: 115px;
+    margin-top: 35px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.25;
+    color: #050505;
+}
+
+.contact-page .description p {
+    margin-bottom: 25px;
+}
+
+.contact-page .description strong {
+    color: #d51d45;
+    font-size: 19px;
+}
+
+
+.description p,
+.description strong {
+    animation: fadein 1.5s ease-in;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+
+/* block blast */
+
+.contact-page .accent-box {
+    width: 105px;
+    height: 250px;
+    position: absolute;
+    top: 400px;
+    left: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-page .accent-box div {
+    border: 1px solid #111;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-page .coral {
+    background: #ff2a0093;
+}
+
+.contact-page .red {
+    background: #ff00378a;
+}
+
+.contact-page .yellow {
+    background: #ffee0098;
+}
+
+.contact-page .blue {
+    background: #0836cd8e;
+}
+
+
+/* clipboard */
+
+.contact-page .clipboard {
+    position: absolute;
+    width: 50%;
+    height: 90%;
+    right: -5%;
+    top: -5%;
+    transform: rotate(6deg);
+    background: #f3d95b;
+    border-radius: 25px;
+    padding: 4px 25px 25px;
+    margin: 0;
+    border: none;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+
+/* paper */
+
+.contact-page .paper {
+    position: relative;
+    height: 67%;
+    transform: translate(0px, 60px);
+    background: #fafafa;
+    padding: 80px 45px;
+    box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.379);
+    border-radius: 25px;
+    box-sizing: border-box;
+}
+
+
+/* contact table graph thingy */
+
+.contact-page .contact-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-page .contact-table div {
+    background: #dce8c8;
+    padding: 18px;
+    border: 1px solid #999;
+    font-weight: 600;
+}
+
+.contact-page .contact-table span {
+    padding: 20px 10px;
+    border: 1px solid #ddd;
+}
+
+
+/* graph..praying i do this right */
+
+.contact-page .graph {
+    height: 250px;
+    margin-top: 20px;
+    background:
+        linear-gradient(#ddd 1px, transparent 1px),
+        linear-gradient(90deg, #ddd 1px, transparent 1px);
+
+    background-size: 25% 25%;
+}
+
+
+/* BIG TEXT */
+
+.contact-page .big-text {
+    position: relative;
+    transform: translate(70px, 0px);
+    bottom: 20px;
+    left: 100px;
+    font-family: 'Playfair Display', serif;
+    font-size: 75px;
+    line-height: .78;
+    letter-spacing: -5.6px;
+    color: #050505;
+}
+
+/* contact map */
+
+.contact-page-body .contact-map {
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto 100px;
+    padding: 50px;
+    border-radius: 35px;
+    background: rgba(222, 235, 255, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 15px 40px rgba(60, 80, 120, 0.15);
+    box-sizing: border-box;
+}
+
+
+/* map titleee */
+
+.contact-page-body .map-heading h2 {
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(50px, 6vw, 85px);
+    font-weight: 400;
+    line-height: .9;
+    letter-spacing: -4px;
+    color: #050505;
+    text-align: center;
+}
+
+.contact-page-body .map-heading p {
+    margin-top: 20px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* thee map */
+
+.contact-page-body .map-container {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 25px;
+    border: 2px solid rgba(69, 129, 240, 0.565);
+    box-shadow: 8px 8px 0px rgba(39, 82, 142, 0.55);
+    background: white;
+}
+
+.contact-page-body .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+}
+
+/* ------tablet view for contact page */
+
+@media (max-width: 1000px) {
+
+/* main */
+
+    .contact-page {
+        min-height: 800px;
+    }
+
+    /* leftside */
+
+    .contact-page .contact-left {
+        width: 50%;
+        padding: 120px 25px;
+    }
+
+    .contact-page .contact-left h1 {
+        font-size: clamp(50px, 7vw, 80px);
+        letter-spacing: -4px;
+    }
+
+    /* description */
+
+    .contact-page .description {
+        width: 85%;
+        margin-left: 70px;
+        font-size: 16px;
+    }
+
+    /* blackblast agaim */
+
+    .contact-page .accent-box {
+        width: 75px;
+        height: 150px;
+        left: 10px;
+        top: 300px;
+    }
+
+    /* clipboard */
+
+    .contact-page .clipboard {
+        width: 50%;
+        right: -3%;
+        transform: rotate(6deg);
+    }
+
+    /* paper */
+
+    .contact-page .paper {
+        padding: 50px 25px;
+    }
+
+    /* table */
+
+    .contact-page .contact-table {
+        font-size: 12px;
+    }
+
+    .contact-page .contact-table div {
+        padding: 14px 5px;
+    }
+
+    .contact-page .contact-table span {
+        padding: 15px 5px;
+    }
+
+    /* graph */
+
+    .contact-page .graph {
+        height: 210px;
+    }
+
+    /* BIG TEXT */
+
+    .contact-page .big-text {
+        left: 50px;
+        font-size: clamp(45px, 6vw, 80px);
+    }
+
+    /* map */
+
+    .contact-page-body .contact-map {
+        width: 90%;
+        padding: 40px;
+    }
+
+    .contact-page-body .map-container {
+        height: 400px;
+    }
+
+}
+
+
+
+/* -------- phone view */
+
+@media (max-width: 700px) {
+
+    /* main */
+
+    .contact-page {
+        min-height: auto;
+        overflow: visible;
+        display: block;
+    }
+
+    /* left side */
+
+    .contact-page .contact-left {
+        width: 100%;
+        padding: 70px 25px 40px;
+    }
+
+    /* title thingy */
+
+    .contact-page .contact-left h1 {
+        font-size: clamp(55px, 15vw, 85px);
+        letter-spacing: -4px;
+        line-height: .9;
+    }
+
+    /* descriptin */
+
+    .contact-page .description {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 35px;
+        font-size: 16px;
+    }
+
+    /* blockity blasty */
+
+    .contact-page .accent-box {
+        width: 65px;
+        height: 130px;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 30px 0;
+    }
+
+    /* clipboard */
+
+    .contact-page .clipboard {
+        position: relative;
+        width: 90%;
+        height: 600px;
+        right: auto;
+        top: auto;
+        margin: 40px auto;
+        transform: rotate(3deg);
+        padding: 25px 15px;
+    }
+
+    /* paper */
+
+    .contact-page .paper {
+        transform: translate(0px, 15px);
+        height: 80%;
+        padding: 40px 20px;
+    }
+
+    /* table */
+
+    .contact-page .contact-table {
+        font-size: 11px;
+    }
+
+    .contact-page .contact-table div {
+        padding: 12px 5px;
+    }
+
+    .contact-page .contact-table span {
+        padding: 15px 5px;
+    }
+
+    /* graph */
+
+    .contact-page .graph {
+        height: 180px;
+        margin-top: 20px;
+    }
+
+    /* BIG TEXT */
+
+    .contact-page .big-text {
+        left: 30px;
+        bottom: 30px;
+        font-size: clamp(45px, 12vw, 70px);
+        letter-spacing: -4px;
+    }
+
+    /* map */
+
+    .contact-page-body .contact-map {
+        width: 92%;
+        margin: 60px auto 70px;
+        padding: 30px 20px;
+        border-radius: 25px;
+    }
+
+    /* map heading */
+
+    .contact-page-body .map-heading h2 {
+        font-size: clamp(50px, 14vw, 75px);
+        letter-spacing: -3px;
+    }
+
+    .contact-page-body .map-heading p {
+        font-size: 16px;
+    }
+
+    /*map */
+
+    .contact-page-body .map-container {
+        height: 350px;
+        border-radius: 20px;
+    }
+}
+
+
+/* for phones */
+
+@media (max-width: 400px) {
+
+    .contact-page .contact-left {
+        padding: 50px 18px 30px;
+    }
+
+    /* nav is now vertical */
+
+    nav {
+        padding: 10px;
+    }
+
+    nav li {
+        display: block;
+        margin: 8px 0;
+    }
+
+    nav li a {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .contact-page .contact-left h1 {
+        font-size: 52px;
+        letter-spacing: -3px;
+    }
+
+    .contact-page .clipboard {
+        width: 94%;
+        height: 560px;
+    }
+
+    .contact-page .paper {
+        padding: 30px 15px;
+    }
+
+    .contact-page .contact-table {
+        font-size: 9px;
+    }
+
+    .contact-page .graph {
+        height: 160px;
+    }
+
+    .contact-page .big-text {
+        left: 20px;
+        font-size: 45px;
+        letter-spacing: -3px;
+    }
+
+    .contact-page-body .contact-map {
+        width: 94%;
+        padding: 25px 15px;
+    }
+
+    .contact-page-body .map-container {
+        height: 300px;
+    }
+}
